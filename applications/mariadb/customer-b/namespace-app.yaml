@@ -6,7 +6,7 @@ metadata:
 spec:
   project: default
   source:
-    repoURL: https://github.com/your-org/your-repo.git
+    repoURL: git@github.com:jvdbeemt/argocd.git
     targetRevision: HEAD
     path: applications/mariadb/customer-b/namespace
     directory:
