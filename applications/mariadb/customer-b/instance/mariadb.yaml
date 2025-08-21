@@ -1,0 +1,16 @@
+apiVersion: mariadb.mmontes.io/v1alpha1
+kind: MariaDB
+metadata:
+  name: mariadb
+spec:
+  rootPasswordSecretKeyRef:
+    name: mariadb-root-password
+    key: password
+  database: customerbdb
+  username: user
+  passwordSecretKeyRef:
+    name: mariadb-user-password
+    key: password
+  storage:
+    size: 1Gi
+
