@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mariadb-operator-customer-a
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: 'https://github.com/your/repo.git'   # Replace with local Git or fake repo path
+    targetRevision: HEAD
+    path: applications/mariadb/operator/overlays/customer-a
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: customer-a-db
+  syncPolicy:
+    automated:
+      selfHeal: true
+      prune: true
