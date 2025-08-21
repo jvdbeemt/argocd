@@ -1,4 +1,0 @@
-resources:
-  - https://raw.githubusercontent.com/mariadb-operator/mariadb-operator/v0.0.21/config/crd/bases/mariadb.mmontes.io_mariadbs.yaml
-  - https://raw.githubusercontent.com/mariadb-operator/mariadb-operator/v0.0.21/config/manager/manager.yaml
-
