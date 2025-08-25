@@ -4,6 +4,6 @@ metadata:
   name: customer-b-db
 spec:
   mariaDbRef:
-    name: customer-b-db
+    name: mariadb
   characterSet: utf8
-  collate: utf8_general_ci
+  collate: utf8_general_ci:

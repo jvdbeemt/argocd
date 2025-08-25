@@ -4,7 +4,7 @@ metadata:
   name: customer-b-db
 spec:
   mariaDbRef:
-    name: customer-b-db
+    name: mariadb
   privileges:
     - "ALL PRIVILEGES"
   database: "*"
