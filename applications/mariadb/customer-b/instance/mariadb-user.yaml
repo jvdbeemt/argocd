@@ -1,0 +1,13 @@
+apiVersion: k8s.mariadb.com/v1alpha1
+kind: User
+metadata:
+  name: customer-b-db
+  namespace: customer-b-db
+spec:
+  mariaDbRef:
+    name: mariadb
+    waitForIt: true
+  passwordSecretKeyRef:
+    name: mariadb-user-password
+    key: password
+
