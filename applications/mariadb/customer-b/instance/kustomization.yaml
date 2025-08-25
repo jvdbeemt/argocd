@@ -3,5 +3,6 @@ resources:
   - mariadb-root-password-sealed.yaml
   - mariadb-user-password-sealed.yaml
   - mariadb-database.yaml
+  - mariadb-user.yaml
   - mariadb-grant.yaml
 
