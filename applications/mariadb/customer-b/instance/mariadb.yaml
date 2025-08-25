@@ -13,4 +13,6 @@ spec:
     key: password
   storage:
     size: 1Gi
+  tls:
+    enabled: false
 
