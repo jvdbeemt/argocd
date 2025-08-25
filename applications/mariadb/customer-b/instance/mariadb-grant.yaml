@@ -1,0 +1,12 @@
+apiVersion: k8s.mariadb.com/v1alpha1
+kind: Grant
+metadata:
+  name: customer-b-db
+spec:
+  mariaDbRef:
+    name: customer-b-db
+  privileges:
+    - "ALL PRIVILEGES"
+  database: "*"
+  table: "*"
+  username: customer-b-db
