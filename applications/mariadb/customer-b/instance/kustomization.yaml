@@ -1,3 +1,4 @@
 resources:
   - mariadb.yaml
+  - mariadb-root-password-sealed.yaml
 
