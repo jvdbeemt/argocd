@@ -1,0 +1,19 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: mariadb-instance-customer-b
+  namespace: argocd
+spec:
+  source:
+    repoURL: git@github.com:jvdbeemt/argocd.git
+    targetRevision: HEAD
+    path: applications/mariadb/customer-b/instance
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: customer-b-db
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+  syncWave: "1"
+
