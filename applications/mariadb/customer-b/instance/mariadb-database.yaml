@@ -2,6 +2,7 @@ apiVersion: k8s.mariadb.com/v1alpha1
 kind: Database
 metadata:
   name: customer-b-db
+  namespace: customer-b-db
 spec:
   mariaDbRef:
     name: mariadb
